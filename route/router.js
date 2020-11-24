@@ -7,6 +7,10 @@ const hbs = require('nodemailer-express-handlebars');
 const path=require('path')
 const randomString=require('randomstring')
 
+router.get('/private',(req,res)=>{
+    res.send("hi")
+})
+
 
 router.post('/register',(req,res)=>{
     const __dirname=path.dirname('Users/rumesh/Desktop/Development2/node/sri-cinema-backend/')
