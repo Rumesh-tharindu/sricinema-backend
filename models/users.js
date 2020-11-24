@@ -1,7 +1,10 @@
 
 module.exports=(sequelize,DataTypes)=>{
     const Users=sequelize.define("users",{
-        
+        userId:{
+         type:DataTypes.UUID,
+         defaultValue:DataTypes.UUIDV1,
+        },
         userName:{
             type:DataTypes.STRING,
             allowNull:false
@@ -18,6 +21,10 @@ module.exports=(sequelize,DataTypes)=>{
        phoneNumber:{
         type:DataTypes.STRING,
         allowNull:false
+   },
+   isVerified:{
+       type:DataTypes.BOOLEAN,
+       defaultValue:false
    }
 
     })
