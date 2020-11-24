@@ -19,7 +19,7 @@ app.use('/user',router)
 
 db.sequelize.sync({force:true}).then(()=>{
  
-app.listen('5000',()=>{
+app.listen(PORT,()=>{
     console.log("listening...")
     
    
