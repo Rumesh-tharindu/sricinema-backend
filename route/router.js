@@ -16,9 +16,9 @@ router.post('/register',(req,res)=>{
     const __dirname=path.dirname('Users/rumesh/Desktop/Development2/node/sri-cinema-backend/')
     const saltRounds = 10;
     const transporter=nodemailer.createTransport({
-        service:'gmail',
+        service:'zoho',
         auth:{
-          user:"tharindurumesh20@gmail.com",
+          user:"cellke@zohomail.com",
           pass:"my$077nethmi"
         }
     })
